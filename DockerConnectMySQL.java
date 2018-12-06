@@ -68,9 +68,9 @@ public class DockerConnectMySQL {
                         ResultSet rs = stmt.executeQuery(sql);
                      System.out.printf("|%5s|%15s|%15s|\n", "StudentId: ", "FirstName: ", "LastName: ");
                         while (rs.next()) {
-                            int id = rs.getInt("StudentId");
-                            String first = rs.getString("FirstName");
-                            String last = rs.getString("LastName");
+                            int StudentId = rs.getInt("StudentId");
+                            String FirstName = rs.getString("FirstName");
+                            String LastName = rs.getString("LastName");
                             System.out.printf("|%4d |%14s |%14s |\n", StudentId, FirstName, LastName);
                         }
                         rs.close();
